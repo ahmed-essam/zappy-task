@@ -1,0 +1,6 @@
+Executing: /tmp/tmp.8czz8sunvG/gpg.1.sh --keyserver
+hkp://keyserver.ubuntu.com:80
+--recv
+7F0CEB10
+?: keyserver.ubuntu.com: Host not found
+gpgkeys: HTTP fetch error 7: couldn't connect: Connection timed out

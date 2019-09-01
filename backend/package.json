@@ -1,0 +1,28 @@
+{
+  "name": "testslack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "./node_modules/.bin/mocha ./test/saveTweets.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/events-api": "^2.3.0",
+    "@slack/rtm-api": "^5.0.2",
+    "@slack/web-api": "^5.1.0",
+    "body-parser": "^1.18.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mocha": "^6.2.0",
+    "mongoose": "^5.1.0",
+    "mongoose-paginate": "^5.0.3",
+    "nodemon": "^1.17.4",
+    "path": "^0.12.7",
+    "twitter": "^1.7.1"
+  }
+}

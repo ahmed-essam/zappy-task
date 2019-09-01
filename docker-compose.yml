@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+  angular: # name of the first service
+    build:
+      context: ./frontend
+    ports:
+      - "4200:4200" # specify port
+
+  express: #name of the second service
+    build:
+      context: ./backend
+    links:
+      - mongodb 
+    ports:
+      - "9000:9000" #specify ports
+    environment:
+      - MONGO_URI=mongodb://mongodb/zappy
